@@ -1,0 +1,106 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body {
+	display:flex;
+	align-items:center;
+	box-sizing: border-box;
+	background-color: #000115;
+	color: #fff;
+	font-family: Monospace;
+	font-size: 13px;
+	line-height: 24px;
+	overscroll-behavior: none;
+	cursor:none;
+
+}
+
+.cursor{
+z-index: 999;
+position: fixed;
+background:#e9c180;
+width: 20px;
+height: 20px;
+border-radius: 70%;
+pointer-events: none;
+box-shadow: 0 0 30px #2696E8,0 0 60px #2696E8,0 0 100px #2696E8;
+
+animation: colors 5s infinite;
+transform: translate(-50%, -50%);
+display:none;
+}
+@keyframes colors{
+	0%{
+		filter:hue-rotate(0deg);
+	}
+	100%{filter:hue-rotate(360deg)}
+}
+.cursor:before{
+	content: '';
+	position:absolute;
+	background:#2696E8;
+	width:50px;
+	height:50px;
+	opacity: 0.2;
+	transform:translate(-30%,-30%);
+	border-radius: 50%;
+	box-shadow: 0 0 30px #2696E8,0 0 60px #2696E8,0 0 100px #2696E8;
+
+}
+
+a {
+	color: rgb(205, 205, 205);
+	text-decoration: none;
+}
+
+
+
+button {
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+
+
+a, button, input, select {
+	pointer-events: auto;
+}
+
+.lil-gui {
+	z-index: 2 !important; /* TODO Solve this in HTML */
+}
+
+@media all and ( max-width: 640px ) {
+	.lil-gui.root {
+		right: auto;
+		top: auto;
+		max-height: 50%;
+		max-width: 80%;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+
+
+	 button {
+		background: transparent;
+		border: 0;
+		border: 1px solid rgb(255, 255, 255);
+		border-radius: 4px;
+		color: #ffffff;
+		padding: 12px 18px;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+.nav-link{
+    font-size:20px;
+    font-weight: 600;
+    margin: 1px;
+    color:antiquewhite;
+    text-decoration: none;
+}
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Albaron</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<!-- <img src="/albaron1.svg" > -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link type="text/css" rel="stylesheet" href="style/main.css">
+		<link type="text/css" rel="stylesheet" href="/style/style.css">
+		<link type="text/css" rel="stylesheet" href="style/logo.css">
+		<link type="text/css" rel="stylesheet" href="style/map.css">
+		<!--  -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+		<script type="text/javascript" src="https://static.sketchfab.com/api/sketchfab-viewer-1.10.1.js"></script>
+		<!-- Earth -->
+		<!-- <script type="module" src="js/extra.js"></script>
+		<script src="https://unpkg.com/three/build/three.min.js"></script>
+		<script src="https://unpkg.com/@here/harp.gl/dist/harp.js"></script> -->
+		<!--  -->
+	</head>
+	<body>
+
+		<div class="cursor"></div>
+		<div id="overlay">
+			<button id="startButton">
+				<h1>play</h1>
+			</button>
+		</div>
+<div id="container">
+	<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-dark ">
+		<div class="container-fluid">
+			<div class="aaa">
+			<div class="bg">
+				<img class="ai" src="image/albaron1 .png" alt="">
+			</div>
+			</div>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+		</div>
+	</nav>
+		<!-- Earth -->
+		<!-- <div id="earth">
+			<canvas id="map"></canvas>
+		</div>
+			<script type="module" src="js/index.js"></script> -->
+			<!--  -->
+<!-- =============== -->
+	<div>
+		<div class='scene'>
+			<div class='iframe-wrapper'>
+			<iframe src="" id="api-frame" allow="autoplay; fullscreen; vr" allowvr allowfullscreen mozallowfullscreen="true"
+				webkitallowfullscreen="true"></iframe>
+			<div class='caption'>
+				<h2></h2>
+				<p></p>
+			</div>
+			</div>
+			<div class='scroller'></div>
+		</div>
+	</div>
+</div>
+<!-- ============= -->
+<div id="info"></div>
+<!-- ============ -->
+<video id="video" loop crossOrigin="anonymous" playsinline style="display:none">
+	<source src="image/sintell.mp4" type='video/mp4; codecs="theora, vorbis"'>
+	<source src="image/sintell.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+</video>
+		<!-- Remove this when import maps will be widely supported -->
+		<script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+		<script src="js/van.js"></script>
+		 <script src="js/vanilla.js"></script>
+		 <script type="importmap">
+			{
+				"imports": {
+					"three": "./build/three.module.js"
+				}
+			}
+		</script>
+		<script type="module" src="js/three.js"></script>
+		<script type="text/javascript" src="js/map.js"></script>
+		<script src="js/mouse.js"></script>
+	</body>
+</html>

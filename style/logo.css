@@ -1,0 +1,40 @@
+.aaa{
+    position: relative;
+    width: 80px;
+    height: 60px;
+     box-shadow: inset 10px 10px 10px rgba(29, 29, 28, 0.884),
+    15px 25px 10px rgba(248, 248, 248, 0),
+    15px 20px 20px rgba(3, 3, 3, 0.308),
+    inset 10px 10px 15px rgba(2500,255,255,0.09);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(129, 127, 125);
+}
+.aaa:hover {
+    color: #8b8989;
+}
+.aaa{
+    width: 80px;
+    height: 60px;
+
+    background-image: linear-gradient(to right,bottom,#ff8258,#e24b23);
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.3),-2px -4px 8px rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10%;
+    position: relative;
+    transform: perspective(1000px);
+    transform-style: preserve-3d;
+}
+.aaa:hover::after,
+.aaa:hover::before{
+transform: translateZ(1);
+}
+.ai{
+    width: 100px;
+    z-index: 10;
+}

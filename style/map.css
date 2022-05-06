@@ -1,0 +1,97 @@
+
+
+  body {
+    background-color: black;
+    color: white;
+    font-weight: 100;
+    font-family: Helvetica, Arial, Helvetica, sans-serif;
+	cursor:none;
+
+  }
+
+  .content {
+    width: 100%;
+    max-width: 640px;
+    margin: 4rem auto 6rem auto;
+    box-sizing: border-box;
+    padding: 0 2rem;
+  }
+
+  .content p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    line-height: 1.2;
+  }
+
+  .back {
+    color: inherit;
+    text-decoration: none;
+    margin: 2rem;
+    display: block;
+  }
+
+
+  .scene {
+    position: absolute;
+
+  }
+  div:after {
+    border-radius: 20px;
+
+
+  }
+
+  .iframe-wrapper {
+    width: 100vw;
+    height: 100vh;
+    border: 0;
+    position: sticky;
+    top: 0;
+    z-index: -1;
+  }
+
+  iframe {
+    width: 100vw;
+    height: 100vh;
+    border: 0;
+  }
+
+  .caption {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 1.6rem 2rem 1.8rem 2rem;
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .caption h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .caption p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  .scroller {
+    width: 100vw;
+    height: 800vh;
+    top: 0;
+    z-index: 2;
+  }
+  @media (max-width: 420px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
